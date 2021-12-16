@@ -1,0 +1,18 @@
+.signInWindow{
+    -fx-background-color: #3eced0;
+}
+
+.pharmacistAccAnchorpane{
+
+}
+/*red : #e80c0c, green: #28e50e
+
+void SignInButtonAction(ActionEvent event) throws SQLException, ClassNotFoundException {
+        ResultSet res = au.select("authorization", "ID_accType", );
+        while(res.next()){
+            String login = res.getString("login");
+            String password = res.getString("password");
+        }
+    }
+
+*/

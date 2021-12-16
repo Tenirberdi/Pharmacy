@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="windowSignIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="signInWindow" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.Window2Controller">
+   <children>
+      <Button fx:id="signIn" layoutX="275.0" layoutY="321.0" mnemonicParsing="false" onAction="#SignInButtonAction" text="sign in" />
+      <Label fx:id="showLabel" layoutX="174.0" layoutY="28.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="236.0" layoutY="17.0" prefHeight="47.0" prefWidth="128.0" text="Sign In" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterButton1" layoutX="519.0" layoutY="346.0" mnemonicParsing="false" onAction="#clickOnEnterButtonAction" text="register" />
+      <Label fx:id="lognLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="398.0" layoutY="98.0" prefHeight="19.0" prefWidth="128.0" textAlignment="CENTER" textFill="#f2170b">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="398.0" layoutY="147.0" prefHeight="19.0" prefWidth="128.0" textAlignment="CENTER" textFill="#eb0b0b">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="212.0" layoutY="188.0" prefHeight="37.0" prefWidth="180.0">
+         <children>
+            <ChoiceBox fx:id="selectAccType" prefWidth="150.0" />
+            
+         </children>
+      </HBox>
+      <TextField fx:id="loginTextField" layoutX="226.0" layoutY="95.0" promptText="login" />
+      <PasswordField fx:id="passwordTextField" layoutX="226.0" layoutY="144.0" promptText="password" />
+   </children>
+</AnchorPane>
